@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Rating Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Rating Guessing Game</h1>
+        <p id="instruction">Which movie has a higher rating?</p>
+        <div class="movies">
+            <div class="movie" id="movie1">1: </div>
+            <div class="movie" id="movie2">2: </div>
+        </div>
+        <div class="choices">
+            <label>
+                <input type="radio" name="choice" value="1" id="choice1">
+                Movie 1
+            </label>
+            <label>
+                <input type="radio" name="choice" value="2" id="choice2">
+                Movie 2
+            </label>
+        </div>
+        <button id="submitBtn">Submit</button>
+        <div id="result"></div>
+        <div id="ratings" class="ratings">
+            <div id="rating1"></div>
+            <div id="rating2"></div>
+        </div>
+        <button id="nextBtn" style="display:none;">Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

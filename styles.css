@@ -1,0 +1,100 @@
+/* Nordic Theme Colors */
+:root {
+    --background-color: #2e3440;
+    --primary-color: #d8dee9;
+    --secondary-color: #81a1c1;
+    --highlight-color: #88c0d0;
+    --button-background: #4c566a;
+    --button-text: #eceff4;
+    --dark-background: #1c1f26; /* Darker background color */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--dark-background); /* Updated to darker background */
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: var(--highlight-color);
+    text-align: center;
+}
+
+#instruction {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.movies {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.movie {
+    background: var(--secondary-color);
+    padding: 10px;
+    border-radius: 4px;
+    color: var(--primary-color);
+    width: 48%;
+}
+
+.choices {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.choices label {
+    display: block;
+    margin: 5px 0;
+}
+
+#submitBtn, #nextBtn {
+    background-color: var(--button-background);
+    color: var(--button-text);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#submitBtn:hover, #nextBtn:hover {
+    background-color: var(--highlight-color);
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.ratings {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ratings div {
+    background: var(--secondary-color);
+    padding: 10px;
+    border-radius: 4px;
+    color: var(--primary-color);
+    margin: 5px 0;
+}
