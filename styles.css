@@ -1,17 +1,17 @@
 /* Nordic Theme Colors */
 :root {
     --background-color: #2e3440;
-    --primary-color: #d8dee9;
-    --secondary-color: #81a1c1;
-    --highlight-color: #88c0d0;
-    --button-background: #4c566a;
-    --button-text: #eceff4;
+    --primary-color: #e5e9f0; /* Lighter primary color for better contrast */
+    --secondary-color: #4c566a; /* Darker secondary color for better readability */
+    --highlight-color: #81a1c1; /* Softer highlight color */
+    --button-background: #3b4252; /* Darker button background */
+    --button-text: #eceff4; /* Keep button text color */
     --dark-background: #1c1f26; /* Darker background color */
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--dark-background); /* Updated to darker background */
+    background-color: var(--dark-background);
     color: var(--primary-color);
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ body {
     padding: 20px;
     background: var(--background-color);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for better depth */
 }
 
 h1 {
@@ -62,6 +62,7 @@ h1 {
 .choices label {
     display: block;
     margin: 5px 0;
+    color: var(--primary-color); /* Ensure label text is readable */
 }
 
 #submitBtn, #nextBtn {
